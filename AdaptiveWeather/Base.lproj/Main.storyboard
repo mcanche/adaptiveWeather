@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-2C-35e" userLabel="TextContainer">
+                                <rect key="frame" x="-492" y="237" width="1200" height="343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-pm-Cvq" userLabel="Cupertino">
+                                        <rect key="frame" x="189" y="10" width="1200" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-Zv-dga">
+                                        <rect key="frame" x="222" y="195" width="1200" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="aHU-pm-Cvq" secondAttribute="centerX" id="67R-aB-6cD"/>
+                                    <constraint firstAttribute="centerX" secondItem="kR2-Zv-dga" secondAttribute="centerX" id="6OT-gt-LhY"/>
+                                    <constraint firstItem="aHU-pm-Cvq" firstAttribute="top" secondItem="Uks-2C-35e" secondAttribute="top" constant="10" id="O2r-My-R3e"/>
+                                    <constraint firstItem="kR2-Zv-dga" firstAttribute="top" secondItem="aHU-pm-Cvq" secondAttribute="bottom" constant="10" id="gtZ-gf-d4w"/>
+                                    <constraint firstAttribute="trailing" secondItem="aHU-pm-Cvq" secondAttribute="trailing" constant="369" id="luS-3a-qem"/>
+                                    <constraint firstItem="kR2-Zv-dga" firstAttribute="width" secondItem="Uks-2C-35e" secondAttribute="width" id="nY5-gt-ZMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="kR2-Zv-dga" secondAttribute="trailing" constant="369" id="tWi-yf-cEV"/>
+                                    <constraint firstAttribute="width" secondItem="aHU-pm-Cvq" secondAttribute="width" id="wLC-1l-y6H"/>
+                                    <constraint firstItem="kR2-Zv-dga" firstAttribute="leading" secondItem="Uks-2C-35e" secondAttribute="leading" constant="189" id="yhg-ff-CEb"/>
+                                    <constraint firstItem="aHU-pm-Cvq" firstAttribute="leading" secondItem="Uks-2C-35e" secondAttribute="leading" constant="189" id="zP1-uT-s9v"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="296-9d-vnx">
+                                <rect key="frame" x="91" y="0.0" width="440" height="197"/>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="10" y="0.0" width="240" height="197"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="10" y="0.0" width="640" height="197"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="296-9d-vnx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="10l-RM-xKT"/>
+                            <constraint firstAttribute="trailing" secondItem="Uks-2C-35e" secondAttribute="trailing" id="2SH-TF-1DG"/>
+                            <constraint firstItem="Uks-2C-35e" firstAttribute="top" secondItem="296-9d-vnx" secondAttribute="bottom" constant="20" id="4W3-8C-0Q2"/>
+                            <constraint firstItem="296-9d-vnx" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Amm-Ex-GLD"/>
+                            <constraint firstItem="296-9d-vnx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="FVJ-Zl-KMV"/>
+                            <constraint firstItem="y3c-jy-aDJ" firstAttribute="bottom" secondItem="Uks-2C-35e" secondAttribute="top" id="FxB-I4-7uU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uks-2C-35e" secondAttribute="bottom" constant="20" id="Lce-JF-YPa"/>
+                            <constraint firstItem="Uks-2C-35e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="Mfc-Ci-TyC"/>
+                            <constraint firstAttribute="width" secondItem="Uks-2C-35e" secondAttribute="width" multiplier="0.5" id="V52-K3-GBr"/>
+                            <constraint firstAttribute="trailing" secondItem="296-9d-vnx" secondAttribute="trailing" constant="150" id="bxg-cQ-s8N"/>
+                            <constraint firstItem="Uks-2C-35e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eTu-AP-cKn"/>
+                            <constraint firstAttribute="centerX" secondItem="296-9d-vnx" secondAttribute="centerX" id="jdp-aK-hu2"/>
+                            <constraint firstItem="296-9d-vnx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="phU-c0-tpn"/>
+                            <constraint firstAttribute="centerX" secondItem="296-9d-vnx" secondAttribute="centerX" id="znv-Cm-RIf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Amm-Ex-GLD"/>
+                                <exclude reference="jdp-aK-hu2"/>
+                                <exclude reference="phU-c0-tpn"/>
+                                <exclude reference="4W3-8C-0Q2"/>
+                                <exclude reference="eTu-AP-cKn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>
